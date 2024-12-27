@@ -10,7 +10,4 @@ def blog_platform():
 
     return app
 
-
-if __name__ == '__main__':
-    app = blog_platform()
-    app.run(port=5000, debug=True)
+app = blog_platform()
