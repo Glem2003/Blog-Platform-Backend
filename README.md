@@ -52,9 +52,7 @@
 ├── app.py                # Flask 應用的主程式
 ├── articles.json         # 儲存文章數據的 JSON 檔案
 ├── requirements.txt      # 依賴項
-├── README.md             # 專案描述文件
-└── tests/
-    └── test_api.py       # 單元測試文件
+└──  README.md             # 專案描述文件
 ```
 
 ## 測試
