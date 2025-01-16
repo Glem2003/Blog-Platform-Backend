@@ -1,6 +1,5 @@
 from flask import jsonify, request
 from datetime import datetime, timezone
-from markdown import markdown
 from model.Article import db, Article
 
 
@@ -32,7 +31,7 @@ def api_routes(app):
 
         new_article = Article(
             title=data['title'],
-            content=markdown(data['content']),
+            content=data['content'],
             type=data['type'],
             created_at=datetime.now(timezone.utc),
             updated_at=datetime.now(timezone.utc)
@@ -55,7 +54,7 @@ def api_routes(app):
 
         # Update students data
         article.title = data.get('title', article.title)
-        article.content = markdown(data.get('content', article.content))
+        article.content = data.get('content', article.content)
         article.type = data.get('type', article.type)
         article.update_at = datetime.now(timezone.utc)
 

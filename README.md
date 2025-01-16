@@ -1,11 +1,10 @@
 # Blog Platform Backend with Markdown Support
 
 ## 專案目標
-建立一個後端服務，支援創建、查看、更新、刪除文章，並且將 Markdown 內容轉換為 HTML 格式顯示。
+建立一個後端服務，支援創建、查看、更新、刪除文章。
 
 ## 技術栈
 - **後端框架**：Flask
-- **Markdown 轉換**：Markdown
 - **資料儲存**：JSON 格式
 - **API**：RESTful API
 
@@ -13,7 +12,7 @@
 
 ### 第 1 週：專案規劃與環境設置
 - 設計 RESTful API 端點
-- 設置專案環境並安裝相關依賴（Flask、Markdown）
+- 設置專案環境並安裝相關依賴
 
 ### 第 2 週：API 開發與 Markdown 轉換功能
 - 創建文章 API（POST /articles）
